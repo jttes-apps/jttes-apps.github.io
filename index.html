@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JTTES Apps</title>
+<meta name="description" content="Aplicaciones para Android de JTTES Apps.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F1E7;
+    --surface: #FFFFFF;
+    --ink: #1B2340;
+    --muted: #5B6178;
+    --line: #E4DCCB;
+    --accent: #B8902F;
+    --navy: #1B2A5C;
+    --badge-bg: #EFE6D2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11182F;
+      --surface: #19223F;
+      --ink: #F3EDE0;
+      --muted: #A9AFC4;
+      --line: #2A3558;
+      --accent: #E2B95A;
+      --badge-bg: #2A3558;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header.wrap { padding: 72px 20px 32px; }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(40px, 8vw, 64px);
+    line-height: 1.05;
+    margin: 0;
+  }
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 16px 0 64px;
+    align-items: start;
+  }
+  .app {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .app-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .app img { width: 88px; height: 88px; border-radius: 20px; }
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--badge-bg);
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .badge.soon-strong { background: var(--accent); color: #11182F; }
+  .app h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: 23px;
+    margin: 0 0 8px;
+  }
+  .app p { color: var(--muted); margin: 0 0 12px; }
+  .app .note { font-size: 13px; font-style: italic; }
+  .app .links { margin-top: auto; padding-top: 8px; font-size: 14px; }
+  .app .links a { color: var(--ink); }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 28px 0 48px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <h1>JTTES Apps</h1>
+  </header>
+
+  <main class="wrap">
+    <section class="apps">
+
+      <article class="app">
+        <div class="app-top">
+          <img src="img/licencia-e.png" alt="Icono de Licencia E" width="88" height="88">
+          <span class="badge soon-strong">Muy pronto</span>
+        </div>
+        <h2>Licencia E</h2>
+        <p>Estudia para el examen teórico de las licencias de armas E y D con todas las preguntas del temario publicado por la Guardia Civil. Practica por temas, haz tests aleatorios y simulacros de examen, repasa tus fallos y sigue tu progreso. Todo el contenido está en el móvil: funciona sin conexión y sin compras.</p>
+        <p class="note">App independiente, sin relación con la Guardia Civil.</p>
+        <div class="links">
+          <a href="https://sites.google.com/view/licencia-e-privacidad/inicio">Política de privacidad</a>
+        </div>
+      </article>
+
+      <article class="app">
+        <div class="app-top">
+          <img src="img/tarot.png" alt="Icono de Torres Tarot" width="88" height="88">
+          <span class="badge">Próximamente</span>
+        </div>
+        <h2>Torres Tarot</h2>
+        <p>Torres Tarot es una app de tarot pensada para la reflexión personal. Antes de cada tirada eliges cómo te sientes hoy, y la lectura de cada carta se adapta a ese momento: la misma carta te dirá cosas distintas según tu estado de ánimo. Empieza con los 22 Arcanos Mayores, funciona sin conexión y todo lo que eliges se queda en tu móvil, nadie tiene acceso a tus tiradas.</p>
+        <p class="note">Las lecturas son una herramienta de entretenimiento y reflexión. No predicen el futuro ni sustituyen el consejo de un profesional.</p>
+      </article>
+
+      <article class="app">
+        <div class="app-top">
+          <img src="img/practical-shooting-tests.png" alt="Icono de Practical Shooting Tests" width="88" height="88">
+          <span class="badge">Próximamente</span>
+        </div>
+        <h2>Practical Shooting Tests</h2>
+        <p>Practical Shooting Tests es una app gratuita para estudiar el reglamento IPSC de tiro práctico (edición 2026). Ofrece preguntas de test con su explicación, estudio por temas y simulacros configurables, para tiradores y árbitros de pistola, pistola .22, escopeta, rifle, Mini Rifle y PCC. Funciona sin conexión y está en español e inglés.</p>
+        <p class="note">App no oficial, sin relación con IPSC ni con ninguna federación.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 JTTES Apps</span>
+      <a href="mailto:jttes.apps@gmail.com">jttes.apps@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
