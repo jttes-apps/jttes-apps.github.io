@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Licencia de Armas E y D 2026 · App gratis con preguntas oficiales</title>
+<meta name="description" content="Prepara el examen teórico de la licencia de armas E y D con más de 400 preguntas tipo test de los temarios publicados por la Guardia Civil. Simulacros de examen, explicaciones y progreso. App gratis para Android, sin registro.">
+<link rel="canonical" href="https://jttes-apps.github.io/licencia-e/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Test Licencia de Armas E y D 2026">
+<meta property="og:description" content="Más de 400 preguntas tipo test, simulacros de examen y explicaciones para aprobar el teórico de la licencia de armas E y D.">
+<meta property="og:url" content="https://jttes-apps.github.io/licencia-e/">
+<meta property="og:image" content="https://jttes-apps.github.io/img/licencia-e/5-examen.webp">
+<link rel="icon" type="image/png" href="../img/licencia-e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Licencia E y D",
+  "alternateName": "Test Licencia de Armas E y D 2026",
+  "operatingSystem": "Android",
+  "applicationCategory": "EducationalApplication",
+  "inLanguage": "es",
+  "description": "App para preparar el examen teórico de la licencia de armas tipo E y tipo D con más de 400 preguntas tipo test, simulacros de examen y explicaciones.",
+  "url": "https://jttes-apps.github.io/licencia-e/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.jtt.licenciae",
+  "image": "https://jttes-apps.github.io/img/licencia-e.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "author": { "@type": "Organization", "name": "JTTES Apps", "url": "https://jttes-apps.github.io/" }
+}
+</script>
+<style>
+  :root {
+    --bg: #F6F1E7;
+    --surface: #FFFFFF;
+    --ink: #1B2340;
+    --muted: #5B6178;
+    --line: #E4DCCB;
+    --accent: #B8902F;
+    --navy: #1B2A5C;
+    --green: #3E9A68;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11182F;
+      --surface: #19223F;
+      --ink: #F3EDE0;
+      --muted: #A9AFC4;
+      --line: #2A3558;
+      --accent: #E2B95A;
+      --green: #6CC596;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.65 Inter, system-ui, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--ink); }
+  .top { padding: 28px 20px 0; font-size: 14px; }
+  .top a { text-decoration: none; color: var(--muted); }
+  .top a:hover { color: var(--ink); }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 28px;
+    align-items: center;
+    padding: 40px 20px 36px;
+  }
+  .hero img { width: 120px; height: 120px; border-radius: 26px; }
+  h1 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(32px, 6vw, 50px);
+    line-height: 1.08;
+    margin: 0 0 12px;
+  }
+  .lead { color: var(--muted); font-size: 18px; margin: 0 0 20px; max-width: 36em; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 22px; padding: 0; list-style: none; }
+  .chips li {
+    font-size: 13px; font-weight: 500;
+    padding: 4px 12px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--surface);
+  }
+  .btn {
+    display: inline-flex; align-items: center;
+    padding: 12px 20px; border-radius: 999px;
+    background: var(--navy); color: #F3EDE0;
+    text-decoration: none; font-weight: 500;
+  }
+  .btn:hover { opacity: .88; }
+  @media (prefers-color-scheme: dark) { .btn { background: var(--accent); color: #11182F; } }
+  @media (max-width: 560px) {
+    .hero { grid-template-columns: 1fr; gap: 20px; padding-top: 28px; }
+    .hero img { width: 96px; height: 96px; border-radius: 22px; }
+  }
+
+  .shots {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 20px;
+    padding: 4px 20px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+    list-style: none;
+  }
+  .shots li { flex: 0 0 auto; scroll-snap-align: start; margin: 0; }
+  .shots img {
+    display: block;
+    width: 200px; height: 400px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .shots figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; text-align: center; }
+
+  section.block { padding: 40px 20px 0; }
+  h2 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+    padding: 0; margin: 0; list-style: none;
+  }
+  .features li {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 18px;
+  }
+  .features strong { display: block; font-weight: 500; margin-bottom: 2px; }
+  .features span { color: var(--muted); font-size: 15px; }
+
+  .exam {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 0 0 16px;
+  }
+  .exam div {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+  }
+  .exam b { display: block; font-family: Fraunces, Georgia, serif; font-size: 34px; line-height: 1.1; color: var(--accent); }
+  .exam span { font-size: 14px; color: var(--muted); }
+  .prose p { margin: 0 0 14px; max-width: 42em; }
+
+  details {
+    border-bottom: 1px solid var(--line);
+    padding: 14px 0;
+    max-width: 46em;
+  }
+  summary { cursor: pointer; font-weight: 500; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+
+  .cta {
+    margin: 48px 20px 0;
+    padding: 28px;
+    border-radius: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 16px 24px;
+    align-items: center; justify-content: space-between;
+  }
+  .cta p { margin: 0; font-family: Fraunces, Georgia, serif; font-size: 22px; font-weight: 600; }
+
+  .legal { padding: 40px 20px 0; color: var(--muted); font-size: 14px; }
+  .legal p { max-width: 50em; margin: 0 0 10px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 48px;
+    padding: 28px 0 48px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+</style>
+</head>
+<body>
+  <nav class="wrap top"><a href="../">← JTTES Apps</a></nav>
+
+  <header class="wrap hero">
+    <img src="../img/licencia-e.png" alt="Icono de la app Licencia E y D" width="120" height="120">
+    <div>
+      <h1>Test Licencia de Armas E y D 2026</h1>
+      <p class="lead">Prepara el examen teórico de la licencia de armas tipo E (escopetas) y tipo D (armas largas rayadas) con <strong>Licencia E y D</strong>, la app gratuita para estudiar de forma práctica, sin registros ni complicaciones.</p>
+      <ul class="chips">
+        <li>Más de 400 preguntas</li>
+        <li>Gratis</li>
+        <li>Sin registro</li>
+        <li>Sin conexión</li>
+      </ul>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.jtt.licenciae">Descargar en Google Play</a>
+    </div>
+  </header>
+
+  <ul class="shots" aria-label="Capturas de la app">
+    <li><figure style="margin:0"><img src="../img/licencia-e/1-inicio.webp" alt="Pantalla de inicio de la app Licencia E y D" width="200" height="400" loading="lazy"><figcaption>Inicio</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/2-temas.webp" alt="Selección de los 7 temas del temario de la licencia de armas" width="200" height="400" loading="lazy"><figcaption>Estudio por tema</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/3-acierto.webp" alt="Pregunta tipo test de la licencia de armas E con respuesta corregida" width="200" height="400" loading="lazy"><figcaption>Corrección al instante</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/4-explicacion.webp" alt="Explicación de una respuesta con referencia a la normativa" width="200" height="400" loading="lazy"><figcaption>Explicaciones</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/5-examen.webp" alt="Simulacro de examen de la licencia de armas E y D con cronómetro" width="200" height="400" loading="lazy"><figcaption>Simulacro de examen</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/6-resultado.webp" alt="Resultado de un simulacro de examen aprobado" width="200" height="400" loading="lazy"><figcaption>Resultado</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/7-fallos.webp" alt="Revisión de los fallos de un examen" width="200" height="400" loading="lazy"><figcaption>Revisión de fallos</figcaption></figure></li>
+    <li><figure style="margin:0"><img src="../img/licencia-e/8-progreso.webp" alt="Progreso y evolución de resultados por tema" width="200" height="400" loading="lazy"><figcaption>Progreso</figcaption></figure></li>
+  </ul>
+
+  <main>
+    <section class="wrap block">
+      <h2>Qué incluye</h2>
+      <ul class="features">
+        <li><strong>Más de 400 preguntas tipo test</strong><span>Las de los temarios publicados por la Guardia Civil, organizadas en 7 temas.</span></li>
+        <li><strong>Estudio por tema</strong><span>Repasa un tema concreto y comprueba cada respuesta al instante.</span></li>
+        <li><strong>Test aleatorio</strong><span>Preguntas mezcladas de todos los temas para practicar.</span></li>
+        <li><strong>Modo examen</strong><span>20 preguntas con cronómetro y el criterio de aprobado real: máximo 4 fallos.</span></li>
+        <li><strong>Explicación de cada respuesta</strong><span>Con referencia a la normativa, para entender y no solo memorizar.</span></li>
+        <li><strong>Revisión de fallos</strong><span>Repasa justo lo que te cuesta.</span></li>
+        <li><strong>Progreso</strong><span>Consulta tus resultados y tu evolución por temas.</span></li>
+        <li><strong>Exámenes a medias</strong><span>Si sales de un examen, la app lo guarda y continúas donde lo dejaste.</span></li>
+      </ul>
+    </section>
+
+    <section class="wrap block prose">
+      <h2>El examen teórico de la licencia E y D</h2>
+      <div class="exam">
+        <div><b>7</b><span>temas</span></div>
+        <div><b>20</b><span>preguntas</span></div>
+        <div><b>4</b><span>fallos máximo</span></div>
+      </div>
+      <p>La prueba teórica para obtener la licencia de armas tipo E (escopetas) y tipo D (armas largas rayadas) es un test sobre el temario que publica la Guardia Civil. Los simulacros de la app siguen ese mismo formato, así que llegas al examen sabiendo lo que te vas a encontrar.</p>
+      <p>El temario oficial se puede consultar y descargar en la <a href="https://web.guardiacivil.es/es/tramites/autorizaciones-de-armas-y-explosivos/controldearmas/pruebas_licenciasarmas/Programa_prueba_teorica_D__E_y_AEM/" rel="noopener">web de la Guardia Civil</a>.</p>
+    </section>
+
+    <section class="wrap block">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿La app es gratis?</summary>
+        <p>Sí. Todas las preguntas están disponibles sin pagar nada y sin compras dentro de la app. Se financia con anuncios.</p>
+      </details>
+      <details>
+        <summary>¿Necesito crear una cuenta?</summary>
+        <p>No. No hay registro ni cuentas. Tu progreso se guarda únicamente en tu dispositivo.</p>
+      </details>
+      <details>
+        <summary>¿Funciona sin conexión?</summary>
+        <p>Sí. Todo el contenido está en el móvil, así que puedes estudiar en cualquier sitio.</p>
+      </details>
+      <details>
+        <summary>¿De dónde salen las preguntas?</summary>
+        <p>Se basan en los temarios publicados por la Guardia Civil para la preparación de las pruebas de la licencia de armas E y D. Cada pregunta incluye una explicación de la respuesta correcta.</p>
+      </details>
+      <details>
+        <summary>¿Está disponible para iPhone?</summary>
+        <p>Por ahora solo está disponible para Android, en Google Play.</p>
+      </details>
+    </section>
+
+    <div class="wrap">
+      <div class="cta">
+        <p>Empieza a preparar tu examen hoy.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.jtt.licenciae">Descargar en Google Play</a>
+      </div>
+    </div>
+
+    <section class="wrap legal">
+      <p><strong>Aviso importante.</strong> Esta aplicación es independiente y no está afiliada, patrocinada ni respaldada por la Guardia Civil ni por ningún organismo oficial. Las preguntas se basan en los temarios publicados por la Guardia Civil y su objetivo es solo ayudarte a estudiar.</p>
+      <p>La app muestra anuncios mediante Google AdMob. En los países donde es obligatorio se te pedirá tu consentimiento, que puedes cambiar en cualquier momento desde «Privacidad y anuncios» en la pantalla de inicio. <a href="https://sites.google.com/view/licencia-e-privacidad/inicio">Política de privacidad</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 <a href="../">JTTES Apps</a></span>
+      <a href="mailto:jttes.apps@gmail.com">jttes.apps@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
