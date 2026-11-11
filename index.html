@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JTTES Apps</title>
 <meta name="description" content="Aplicaciones para Android de JTTES Apps.">
+<link rel="canonical" href="https://jttes-apps.github.io/">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,6 +86,18 @@
   .app .note { font-size: 13px; font-style: italic; }
   .app .links { margin-top: auto; padding-top: 8px; font-size: 14px; }
   .app .links a { color: var(--ink); }
+  .app-top > a { display: block; line-height: 0; }
+  .app h2 a.title-link { color: inherit; text-decoration: none; }
+  .app h2 a.title-link:hover { text-decoration: underline; }
+  .app .links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+  .app .links a.btn {
+    display: inline-flex; align-items: center;
+    padding: 10px 16px; border-radius: 999px;
+    background: var(--navy); color: #F3EDE0;
+    text-decoration: none; font-weight: 500;
+  }
+  .app .links a.btn:hover { opacity: .88; }
+  @media (prefers-color-scheme: dark) { .app .links a.btn { background: var(--accent); color: #11182F; } }
   footer {
     border-top: 1px solid var(--line);
     padding: 28px 0 48px;
@@ -105,13 +118,14 @@
 
       <article class="app">
         <div class="app-top">
-          <img src="img/licencia-e.png" alt="Icono de Licencia E" width="88" height="88">
-          <span class="badge soon-strong">Muy pronto</span>
+          <a href="licencia-e/"><img src="img/licencia-e.png" alt="Icono de Licencia E y D" width="88" height="88"></a>
+          <span class="badge soon-strong">2026</span>
         </div>
-        <h2>Licencia E</h2>
+        <h2><a class="title-link" href="licencia-e/">Licencia E y D</a></h2>
         <p>Estudia para el examen teórico de las licencias de armas E y D con todas las preguntas del temario publicado por la Guardia Civil. Practica por temas, haz tests aleatorios y simulacros de examen, repasa tus fallos y sigue tu progreso. Todo el contenido está en el móvil: funciona sin conexión y sin compras.</p>
         <p class="note">App independiente, sin relación con la Guardia Civil.</p>
         <div class="links">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.jtt.licenciae">Ver en Google Play</a>
           <a href="https://sites.google.com/view/licencia-e-privacidad/inicio">Política de privacidad</a>
         </div>
       </article>
